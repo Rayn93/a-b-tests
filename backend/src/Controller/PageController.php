@@ -12,7 +12,9 @@ class PageController extends AbstractController
     /** @Route("/") */
     public function index() : Response
     {
-        return new Response('Elo man!');
+        return $this->render('homepage.html.twig', [
+
+        ]);
     }
 
 }
